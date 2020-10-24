@@ -1,1 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
 
+.color__boxes {
+  display: flex;
+  z-index: 100;
+}
+
+.color__boxes>div {
+  flex: 1;
+  height: 100vh;
+}
+
+.docdiv {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  border-top: 2px solid rgba(01, 01, 01,.2)
+}
+
+.docdiv > div {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+}
+    
+.docdiv>div :last-child{
+  font-weight: 500;
+}
+
+.star {
+  width: 15px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  background: #efefef;
+  font-weight: 500;
+}
+
+button {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  border-radius: 50%;
+  font-weight: 500;
+  border: none;
+  background: #EA7B3A;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0,.7);
+}
+    
